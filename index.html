@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Proyecto Final (CV) - Argentina Programa 4.0</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<!-- MENU ENCABEZADO -->
+	<div class="contenedor-header">
+		<header>
+			<div class="logo">
+				<a href="#">ANDRE</a>				
+			</div>
+			<nav id="nav">
+				<ul>
+					<li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+					<li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+					<li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+					<li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+					<li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+				</ul>
+			</nav>
+			<div class="nav-responsive" onclick="mostrarOcultarMenu()">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</header>
+	</div> 		
+
+	<!-- SECCION INICIO -->		
+	<section id="inicio" class="inicio">
+		<div class="contenido-banner">
+			<div class="contenedor-img">
+				<img src="foto para portfolio test.png" alt="Foto de perfil">
+			</div>
+			<h1>ANDRE CARPENTER</h1>
+			<h2>Diseñador Web Full Stack</h2>
+			<div class="redes">
+				<a href="https://www.facebook.com/" target="_BANK"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://twitter.com/" target="_BANK"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://www.instagram.com/" target="_BANK"><i class="fa-brands fa-instagram"></i></a>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCION SOBRE MI-->
+	<section id="sobremi" class="sobremi">
+		<div class="contenido-seccion">
+			<h2>Sobre Mí</h2>
+			<p><span>Hola, soy Andre Carpenter.</span> un diseñador Web Full Stack, apasionado por crear experiencias digitales a través de la resolución de problemas. Me gusta combinar el diseño visual con el pensamiento de productos para dar vida a experiencias significativas.</p>
+		</div>
+		<div class="fila">
+			<!-- datos personales -->
+			<div class="col">
+				<h3>Datos Personales</h3>
+				<ul>
+					<li>
+						<strong>Cumpleaños</strong>
+						<span>3 de Junio de 1989</span>
+					</li>
+					<li>
+						<strong>Teléfono</strong>
+						<span>(862) 899-0472</span>
+					</li>
+					<li>
+						<strong>E-mail</strong>
+						<span>andre.carpenter@example.com</span>
+					</li>
+					<li>
+						<strong>Dirección</strong>
+						<span id="direccion">9086 Homestead Rd</span>
+					</li>
+				</ul>
+			</div>
+			<!-- pasatiempos -->
+			<div class="col">
+				<h3>Pasatiempos</h3>
+				<div class="contenedor-pasatiempo">
+					<div class="pasatiempo">
+						<i class="fa-solid fa-music"></i>
+						<span>MUSICA</span>
+					</div>
+					<div class="pasatiempo">
+						<i class="fa-regular fa-futbol"></i>
+						<span>DEPORTE</span>
+					</div>
+					<div class="pasatiempo">
+						<i class="fa-solid fa-book"></i>
+						<span>LIBROS</span>
+					</div>
+					<div class="pasatiempo">
+						<i class="fa-solid fa-gamepad"></i>
+						<span>JUEGOS</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button>
+			<span><a download="curriculumAndreCarpenter" href="curriculum-andre.pdf">Descargar CV <i class="fa-solid fa-download"></i></a></span>
+			<span class="overlay"></span>
+		</button>
+	</section>
+
+	<!-- SECCION SKILLS -->
+	<section class="skills" id="skills">
+		<div class="contenido-seccion">
+			<h2>Habilidades</h2>
+			<div class="fila">
+				<!--Technical Skill-->
+				<div class="col">
+					<h3>Habilidades técnicas</h3>
+					<div class="skill">
+						<span>Javascript</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>75%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>HTML & CSS</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Photoshop</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>60%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Professional Skill-->
+				<div class="col">
+					<h3>Habilidades profesionales</h3>
+					<div class="skill">
+						<span>Trabajo en equipo</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Comunicación</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>100%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Liderazgo</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>95%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCION CURRICULUM -->
+	<section id="curriculum" class="curriculum">
+		<div class="contenido-seccion">
+			<h2>Curriculum</h2>
+			<div class="fila">
+				<div class="col izquierda">
+					<h3>Educación</h3>
+					<div class="item izq">
+						<h4>Educación secundaria</h4>
+						<span class="casa">Escuela secundaria "Santa Maria"</span>
+						<span class="fecha"> 2010 - 2015</span>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+					<div class="item izq">
+						<h4>Ingeniero en sistemas</h4>
+						<span class="casa">Universidad de Buenos Aires</span>
+						<span class="fecha"> 2016 - 2021</span>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+					<div class="item izq">
+						<h4>Curso de marketing digital</h4>
+						<span class="casa">Instituto Da Vinci</span>
+						<span class="fecha"> 2021 - 2022</span>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col derecha">
+					<h3>Experiencia laboral</h3>
+					<div class="item der">
+						<h4>Designer</h4>
+						<span class="casa">Cyber Technologies S.A.</span>
+						<span class="fecha"> 2017 - 2019</span>
+						<p>Resolución de conflictos y negociación de acuerdos entre las partes con el fin de llegar a soluciones ganar-ganar en los desacuerdos y aclarar malentendidos.
+
+						Gestión y archivo de documentación de calidad y participación en auditorías de calidad internas y externas.</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+					<div class="item der">
+						<h4>Diseñador Web</h4>
+						<span class="casa">Comdata S.A.</span>
+						<span class="fecha"> 2020 - 2021</span>
+						<p>Diseño de gráficos, sonidos, multimedia, colores y estilos de páginas web. Creación de interactividad, navegacion y enlaces de sitios web. Empeamiento de técnicas de TI.</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+					<div class="item der">
+						<h4>Desarrollador Web</h4>
+						<span class="casa">Web Developer S.A.</span>
+						<span class="fecha"> 2021 - Actualidad</span>
+						<p>Diseño de gráficos, sonidos, multimedia, colores y estilos de páginas web. Desarrollo de interactividad, navegacion y enlaces de sitios web. Empeamiento de técnicas de TI.</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCION CONTACTO -->
+	<section id="contacto" class="contacto">
+		<div class="contenido-seccion">
+			<h2>CONTACTO</h2>
+			<div class="fila">
+				<!--Formulario -->
+				<div class="col">
+					<form action="https://formsubmit.co/kevinkosa99@gmail.com" method="POST">
+						<input type="text"  name="name" placeholder="Nombre" required>
+						<input type="text" name="phoneNumber" placeholder="Teléfono" required>
+						<input type="text" name="email" placeholder="E-mail" required>
+						<input type="text" name="subject" placeholder="Asunto" required>
+						<textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+						<input type="submit" value="Enviar" id="boton">
+						<input type="hidden" name="_next" value=https://www.facebook.com/>
+						<input type="hidden" name="_captcha" value="false">
+					</form>
+					<!-- datos adicionales -->
+					<div class="col">
+						<div class="info">
+							<ul>
+								<li>
+									<i class="fa-solid fa-location-dot"></i>
+									9086 Homestead Rd
+								</li>
+								<li>
+									<i class="fa-solid fa-phone"></i>
+									(862) 899-0472
+								</li>
+								<li>
+									<i class="fa-solid fa-envelope"></i>
+									andre.carpenter@example.com
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer>
+		<a href="#inicio" class="arriba">
+			<i class="fa-solid fa-angles-up"></i>
+		</a>
+		<div class="redes">
+			<a href="https://www.facebook.com/" target="_BANK"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://twitter.com/" target="_BANK"><i class="fa-brands fa-twitter"></i></a>
+			<a href="https://www.instagram.com/" target="_BANK"><i class="fa-brands fa-instagram"></i></a>
+		</div>
+	</footer>
+	.<script src="js/script.js"></script>
+</body>
+</html>
